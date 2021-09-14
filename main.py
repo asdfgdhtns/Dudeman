@@ -357,6 +357,10 @@ while True:
                 eventQueue.append(('buttonDown',0))
             if event.key == pygame.K_DOWN:
                 eventQueue.append(('buttonDown',2))
+            if event.key == pygame.K_KP_PLUS:
+                eventQueue.append(('buttonDown',5))
+            if event.key == pygame.K_KP_MINUS:
+                eventQueue.append(('buttonDown',4))
     
     if mode == 1: #gameplay
         while len(eventQueue) > 0:
